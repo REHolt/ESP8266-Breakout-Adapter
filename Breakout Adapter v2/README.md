@@ -32,8 +32,8 @@ V2.0B - OSH Park renderings<br />
 ### Partlist (v2.0)
 | Part  | Value                      | Info                |
 |:------|:---------------------------|:--------------------|
-| IC1   | SPX3819M5-L-3-3 (SOT23-5) | Voltage regulator - Variant "A" |
-| IC1   | AS1363-BSTT-33 (SOT23-6)  | Voltage regulator - Variant "B" |
+| IC1   | SPX3819M5-L-3-3 (SOT23-5) | Voltage regulator - Variant "B" |
+| IC1   | AS1363-BSTT-33 (SOT23-6)  | Voltage regulator - Variant "A" |
 | C1    | 10µF (Ceramic, 1206)      | Input capacitor for IC1 |
 | C2    | 10µF (Ceramic, 1206)      | Output capacitor for IC1 |
 | <del>C3</del>    | <del>10nF Ceramic 0805</del>      | <del>Bypass capacitor for IC1</del> (not needed) |
@@ -42,7 +42,7 @@ V2.0B - OSH Park renderings<br />
 | R2    | 10K (0805) *              | Pulldown resistor for GPIO15  |
 | R3    | 10K (0805)                | Pullup resistor for Reset |
 | R4    | 10K (0805)                | Pullup resistor for GPIO0 |
-| R5/R8 | 10K-100K (0805)           | Pullup OR Pulldown for the LDO enable pin |
+| R5,R8 | 10K-100K (0805)           | Pullup OR Pulldown for the LDO enable pin |
 | R9    | 10K (0805)                | [Optional] Pullup resistor for GPIO12 |
 | R10   | 10K (0805)                | [Optional] Pullup resistor for GPIO14 |
 | R7    | ~220 Ohm (0805)           | [Optional] Current limiting resistor for the led ** |
@@ -68,7 +68,8 @@ Optional "socket" header for the esp module
 * 2x 1x8 (2mm) female and male
 
 ### Difference between variant A and B
-The only difference is the used LDO. Variant A uses the AS1363, variant B the SPX3819(or pincompatible).
+The only difference is the used LDO. Variant A uses the AS1363, variant B the SPX3819(or pincompatible*).
+*Like 
 
 #### Resources:
 - AS1363 Datasheet - https://ams.com/eng/content/download/1961/15107/file/AS1364_Datasheet_EN_v3.pdf
